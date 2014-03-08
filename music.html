@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title> Music </title>
+
+	<link rel="stylesheet" type="text/css" href="resources/reset.css">
+	<link rel="stylesheet" type="text/css" href="resources/style.css">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+	<script src="resources/jquery-2.1.0.min.js"></script>
+	<script src="resources/transit.js"></script>
+	<script src="resources/kits.js"></script>
+
+</head>
+<body>
+
+	<img class="background" src="resources/background.jpeg" alt="well there goes the ui...">
+
+	<ul id="playlist">
+
+		<li class="track" data-title="Iris" data-artist="Goo Goo Dolls" data-album="Dizzy Up the Girl" data-type=".mp3"></li>
+		<li class="track" data-title="The Promise" data-artist="When in Rome" data-album="When in Rome" data-type=".mp3"></li>
+		<li class="track" data-title="Take On Me" data-artist="A-ha" data-album="Hunting High and Low" data-type=".mp3"></li>
+		<li class="track" data-title="The Man" data-artist="Aloe Blacc" data-album="Lift Your Spirit" data-type=".mp3"></li>
+		<li class="track" data-title="Sweet Disposition" data-artist="The Temper Trap" data-album="Conditions" data-type=".m4a"></li>
+		<li class="track" data-title="Animal" data-artist="Miike Snow" data-album="Miike Snow" data-type=".mp3"></li>
+		<li class="track" data-title="Changing of the Seasons" data-artist="Two Door Cinema Club" data-album="Changing of the Seasons" data-type=".m4a"></li>
+		<li class="track" data-title="Wherever You Will Go" data-artist="The Calling" data-album="Camino Palmero" data-type=".mp3"></li>
+		<li class="track" data-title="Midnight City" data-artist="M83" data-album="Hurry Up, We're Dreaming" data-type=".mp3"></li>
+		<li class="track" data-title="We Own the Sky" data-artist="M83" data-album="Saturdays = Youth" data-type=".mp3"></li>
+		<li class="track" data-title="Team" data-artist="Lorde" data-album="Pure Heroine" data-type=".m4a"></li>
+		<li class="track" data-title="Taswell" data-artist="C418" data-album="Minecraft - Volume Beta" data-type=".mp3"></li>
+		<li class="track" data-title="Of the Night" data-artist="Bastille" data-album="All This Bad Blood" data-type=".m4a"></li>
+		<li class="track" data-title="Dancing in the Moonlight" data-artist="King Harvest" data-album="Dancing in the Moonlight" data-type=".mp3"></li>
+		<li class="track" data-title="Dancing in the Moonlight" data-artist="King Harvest" data-album="Dancing in the Moonlight" data-type=".mp3"></li>
+		
+	</ul> <!-- @end ul#playlist -->
+
+	<div id="controlbar">
+
+		<span class="prev"><i class="fa fa-step-backward"></i></span>
+		<span class="repeat"><i class="fa fa-retweet"></i></span>
+		<div class="leftcontrols">
+			<span class="trackstart"> --:-- </span>
+		</div>
+		<span class="seekbar">
+			<div id="nowplaying">
+				<span class="tracktitle"></span>
+				<span class="trackartist"></span>
+				<span class="trackalbum"></span>
+			</div>
+			<div id="trackseeker">
+				<div id="progressbar">
+					<div id="progress"></div>
+					<input type="range" id="seekbar" min="0" value="0" />
+				</div>
+			</div>
+		</span>
+		<div class="rightcontrols">
+			<span class="trackend"> --:-- </span>
+		</div>
+		<span class="next"><i class="fa fa-step-forward"></i></span>
+
+	</div> <!-- @end div#controlbar -->
+
+</body>
+</html>
